@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+}
+header {
+	display: inline-flex;
+	width: 100%;
+	height: auto;
+}
+.logo-box {
+	margin:  5px auto;
+	transition: 0.5s;
+}
+.logo-box:hover {
+	opacity: 0.4;
+}
+#queen-logo {
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#queen-logo {
+	display: flex;
+	background-image: url(queenshop-logo.svg);
+	background-size: contain;
+	width: 340px;
+	height: 100px;
+}
+.product-seach {
+	
+}
