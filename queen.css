@@ -2,7 +2,8 @@ body {
 	margin: 0;
 }
 header {
-	display: inline-flex;
+	position: relative;
+	display: flex;
 	width: 100%;
 	height: auto;
 }
@@ -24,16 +25,55 @@ header {
 	width: 340px;
 	height: 100px;
 }
-.product-search {
+.product-search, .member-box {
+	position: absolute;
 	display: flex;
+	right: 10%;
+	top: 25%;
+}
+.member-box {
+	right: 15%;
+	top: 55%;
 }
 .search-box {
+	display: flex;
 	margin: auto;
+	border-bottom: 1px solid black;
 }
 #search-text {
 	width: 150px;
 	height: 20px;
 	border: none;
-	border-bottom: 1px solid black;
-
+}
+.icon-link {
+	margin: 0 8%;
+}
+.search-icon {
+	width: 15px;
+}
+.member-box, .header-list {
+	display: flex;
+	border: red 1px solid; 
+	width: 10%;
+	height: 20%;
+}
+.header-list {
+	margin: auto;
+	width: 60%;
+	height: 45px;
+}
+#main-container {
+	background-color: #FAFAFA;
+	width: 100%;
+}
+#carousel-box {
+	display: flex;
+	margin: 20px auto;
+	border: red 1px solid; 
+	height: 700px;
+}
+/*#myCarousel {
+	margin: auto;
+}*/
+.content {
 }
