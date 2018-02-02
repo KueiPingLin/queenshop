@@ -8,6 +8,8 @@ header {
 	height: auto;
 }
 .logo-box {
+	display: flex;
+	justify-content: center;
 	margin:  5px auto;
 	transition: 0.5s;
 }
@@ -19,7 +21,6 @@ header {
 	background-position: center;
 }
 #queen-logo {
-	display: flex;
 	background-image: url(queenshop-logo.svg);
 	background-size: contain;
 	width: 340px;
@@ -48,8 +49,8 @@ header {
 .icon-link {
 	margin: 0 8%;
 }
-.search-icon {
-	width: 15px;
+.search-icon, .member-icon {
+	width: 16px;
 }
 .member-box, .header-list {
 	display: flex;
@@ -76,4 +77,8 @@ header {
 	margin: auto;
 }*/
 .content {
+}
+#queen-footer {
+	background-color: #2a2a2a;
+	height: 190px;
 }
