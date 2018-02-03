@@ -1,21 +1,22 @@
 body {
 	margin: 0;
 }
-header {
+header, .header-box {
 	position: relative;
 	display: flex;
 	width: 100%;
 	height: auto;
 }
-.logo-box {
+.logo-box, .member-box {
 	display: flex;
 	justify-content: center;
-	margin:  5px auto;
-	transition: 0.5s;
 }
-.logo-box:hover {
-	opacity: 0.4;
+#queen-logo:hover, .member-link:hover, .header-list>a:hover, .list-link:hover {
+	opacity: 0.5;
 }
+.member-link:hover, .list-link:hover {
+	color: #141414;
+} 
 #queen-logo {
 	background-repeat: no-repeat;
 	background-position: center;
@@ -25,6 +26,7 @@ header {
 	background-size: contain;
 	width: 340px;
 	height: 100px;
+	transition: 0.5s;
 }
 .product-search, .member-box {
 	position: absolute;
@@ -33,50 +35,66 @@ header {
 	top: 25%;
 }
 .member-box {
-	right: 15%;
-	top: 55%;
+	right: 14%;
+	top: 60%;
 }
 .search-box {
 	display: flex;
+	width: 170px;
 	margin: auto;
 	border-bottom: 1px solid black;
 }
 #search-text {
-	width: 150px;
-	height: 20px;
 	border: none;
-}
-.icon-link {
-	margin: 0 8%;
 }
 .search-icon, .member-icon {
 	width: 16px;
 }
 .member-box, .header-list {
-	display: flex;
-	border: red 1px solid; 
-	width: 10%;
-	height: 20%;
+	display: flex; 
+}
+.member-link {
+	color: #000000;
+	padding: 2px;
+	transition: 0.1s;
+}
+.member-link > span {
+	font-size: 3px;
 }
 .header-list {
 	margin: auto;
+	align-items: center;
+	justify-content: space-between;
 	width: 60%;
 	height: 45px;
 }
+.header-list > a {
+	font-size: 15px;
+	font-family: Georgia;
+	letter-spacing: 0.5px;
+}
+.list-link {
+	color: #141414;
+}
 #main-container {
 	background-color: #FAFAFA;
-	width: 100%;
+	display: flex;
 }
 #carousel-box {
-	display: flex;
-	margin: 20px auto;
-	border: red 1px solid; 
+	justify-content: center;
+	margin: 30px auto;
+	border: red 1px solid;
+	width: 100%;
 	height: 700px;
 }
-/*#myCarousel {
-	margin: auto;
-}*/
-.content {
+#myCarousel > ol {
+	bottom: -40px;
+}
+#myCarousel > ol > li {
+	background-color: #DBDBDB;
+}
+#myCarousel > ol > .active {
+	background-color: #666666;
 }
 #queen-footer {
 	background-color: #2a2a2a;
