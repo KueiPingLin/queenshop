@@ -1,6 +1,10 @@
 body {
 	margin: 0;
 }
+/*#header-all {
+	position: fixed;
+	height: 100%;
+}*/
 header, .header-box {
 	position: relative;
 	display: flex;
@@ -14,7 +18,7 @@ header, .header-box {
 #queen-logo:hover, .member-link:hover, .header-list>a:hover, .list-link:hover {
 	opacity: 0.5;
 }
-.member-link:hover, .list-link:hover {
+.member-link:hover, .list-link, .list-link:hover {
 	color: #141414;
 } 
 #queen-logo {
@@ -73,25 +77,24 @@ header, .header-box {
 	font-family: Georgia;
 	letter-spacing: 0.5px;
 }
-.list-link {
-	color: #141414;
-}
 #main-container {
 	background-color: #FAFAFA;
 	display: flex;
+	margin: 5px auto;
 }
 #carousel-box {
-	justify-content: center;
-	margin: 30px auto;
-	border: red 1px solid;
+	margin-top: 25px;
+	margin-bottom: 40px;
+	/*border: red 1px solid;*/
 	width: 100%;
-	height: 700px;
 }
 #myCarousel > ol {
 	bottom: -40px;
 }
 #myCarousel > ol > li {
 	background-color: #DBDBDB;
+	border: none;
+	margin: 2px;
 }
 #myCarousel > ol > .active {
 	background-color: #666666;
