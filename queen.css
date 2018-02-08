@@ -1,11 +1,15 @@
 body {
 	margin: 0;
 }
-/*#header-all {
+header {
 	position: fixed;
-	height: 100%;
-}*/
-header, .header-box {
+	background-color: white;
+	height: 150px;
+	width: 100%;
+	z-index: 1;
+	top: 0;
+}
+.header-box {
 	position: relative;
 	display: flex;
 	width: 100%;
@@ -40,7 +44,7 @@ header, .header-box {
 }
 .member-box {
 	right: 14%;
-	top: 60%;
+	top: 50%;
 }
 .search-box {
 	display: flex;
@@ -54,7 +58,7 @@ header, .header-box {
 .search-icon, .member-icon {
 	width: 16px;
 }
-.member-box, .header-list {
+.member-box, .header-list, .spring-pic {
 	display: flex; 
 }
 .member-link {
@@ -77,13 +81,13 @@ header, .header-box {
 	font-family: Georgia;
 	letter-spacing: 0.5px;
 }
-#main-container {
+.main-carousel {
 	background-color: #FAFAFA;
 	display: flex;
 	margin: 5px auto;
 }
 #carousel-box {
-	margin-top: 25px;
+	margin-top: 175px;
 	margin-bottom: 40px;
 	/*border: red 1px solid;*/
 	width: 100%;
@@ -102,4 +106,28 @@ header, .header-box {
 #queen-footer {
 	background-color: #2a2a2a;
 	height: 190px;
+}
+.spring-video, .spring-font {
+	display: flex;
+	flex-flow: column;
+}
+.spring-video {
+	background-color: #2d5155;
+	width: 100%;
+}
+.spring-font, .spring-pic {
+	align-items: center;
+	margin: 20px auto;
+	font-family: ‘cwTeXFangSong’, serif, Lucida Console;
+	color: #B9BFC2;
+}
+.spring-font > h3 {
+	letter-spacing: 2px;
+	font-weight: lighter;
+}
+.spring-pic {
+	width: 85%;
+}
+.springBox {
+	margin: 0 auto;
 }
