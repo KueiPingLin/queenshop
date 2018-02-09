@@ -6,7 +6,7 @@ header {
 	background-color: white;
 	height: 150px;
 	width: 100%;
-	z-index: 1;
+	z-index: 20;
 	top: 0;
 }
 .header-box {
@@ -43,6 +43,7 @@ header {
 	top: 25%;
 }
 .member-box {
+	display: flex; 
 	right: 14%;
 	top: 50%;
 }
@@ -58,9 +59,6 @@ header {
 .search-icon, .member-icon {
 	width: 16px;
 }
-.member-box, .header-list, .spring-pic {
-	display: flex; 
-}
 .member-link {
 	color: #000000;
 	padding: 2px;
@@ -70,6 +68,7 @@ header {
 	font-size: 3px;
 }
 .header-list {
+	display: flex; 
 	margin: auto;
 	align-items: center;
 	justify-content: space-between;
@@ -107,27 +106,44 @@ header {
 	background-color: #2a2a2a;
 	height: 190px;
 }
-.spring-video, .spring-font {
-	display: flex;
+.spring-video, .spring-font, .spring-sale {
+	display: flex; 
 	flex-flow: column;
 }
 .spring-video {
 	background-color: #2d5155;
 	width: 100%;
+	height: auto;
 }
 .spring-font, .spring-pic {
 	align-items: center;
 	margin: 20px auto;
 	font-family: ‘cwTeXFangSong’, serif, Lucida Console;
 	color: #B9BFC2;
+	font-size: 13px;
+	cursor: default; 
 }
 .spring-font > h3 {
 	letter-spacing: 2px;
 	font-weight: lighter;
 }
-.spring-pic {
-	width: 85%;
+.spring-pic, .container-1 {
+	display: flex;
 }
 .springBox {
-	margin: 0 auto;
+	margin: 0 10px;
+	text-align: center;
 }
+.springBox > p {
+	letter-spacing: 0.5px;
+	margin-top: 10px;
+}
+.new-pic {
+	display: flex;
+	margin: 100px auto;
+}
+.spring-sale {
+	margin-left: 1%;
+	justify-content: space-between;
+}
+
