@@ -25,13 +25,13 @@ header {
 .member-link:hover, .list-link, .list-link:hover {
 	color: #141414;
 } 
-#queen-logo {
+#queen-logo, .content2-pic {
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: contain;
 }
 #queen-logo {
 	background-image: url(queenshop-logo.svg);
-	background-size: contain;
 	width: 340px;
 	height: 100px;
 	transition: 0.5s;
@@ -88,7 +88,6 @@ header {
 #carousel-box {
 	margin-top: 175px;
 	margin-bottom: 40px;
-	/*border: red 1px solid;*/
 	width: 100%;
 }
 #myCarousel > ol {
@@ -146,4 +145,13 @@ header {
 	margin-left: 1%;
 	justify-content: space-between;
 }
-
+.container-2 {
+	display: flex; 
+	flex-flow: column;
+	width: 100%;
+}
+.content2-pic {
+	max-width: 1440px;
+	height: auto;
+	overflow: hidden;
+}
