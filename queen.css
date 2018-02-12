@@ -126,7 +126,7 @@ header {
 	letter-spacing: 2px;
 	font-weight: lighter;
 }
-.spring-pic, .container-1 {
+.spring-pic, .spring-container {
 	display: flex;
 }
 .springBox {
@@ -145,13 +145,30 @@ header {
 	margin-left: 1%;
 	justify-content: space-between;
 }
-.container-2 {
+.bigItem-container, .mediumItem-container {
 	display: flex; 
 	flex-flow: column;
 	width: 100%;
 }
-.content2-pic {
+.mediumItem-container {
+	margin-bottom: 100px;
+}
+.bigItem-pic, .mediumItem-box {
 	max-width: 1440px;
 	height: auto;
 	overflow: hidden;
+}
+.mediumItem-box {
+	display: flex;
+	width: 95%;
+	margin: 20px auto; 
+}
+.mediumItem-pic {
+	display: flex;
+	margin: 10px auto;
+}
+.item-pic {
+	display: flex;
+	margin: 0 auto;
+	width: 90%;
 }
