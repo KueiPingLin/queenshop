@@ -126,7 +126,7 @@ header {
 	letter-spacing: 2px;
 	font-weight: lighter;
 }
-.spring-pic, .spring-container {
+.spring-pic, .spring-container, .discount-container {
 	display: flex;
 }
 .springBox {
@@ -145,7 +145,10 @@ header {
 	margin-left: 1%;
 	justify-content: space-between;
 }
-.bigItem-container, .mediumItem-container {
+.bigItem-container {
+	margin-bottom: 60px;
+}
+.bigItem-container, .mediumItem-container, .discount-container2 {
 	display: flex; 
 	flex-flow: column;
 	width: 100%;
@@ -158,17 +161,61 @@ header {
 	height: auto;
 	overflow: hidden;
 }
-.mediumItem-box {
+.mediumItem-box, .mediumItem-pic {
 	display: flex;
-	width: 95%;
 	margin: 20px auto; 
-}
-.mediumItem-pic {
-	display: flex;
-	margin: 10px auto;
+	width: 95%;
 }
 .item-pic {
 	display: flex;
 	margin: 0 auto;
 	width: 90%;
+}
+.discount-box {
+	display: flex;
+	align-items: center;
+	width: 80%;
+	margin: 40px auto;
+}
+.discount-pic {
+	width: 100%;
+	height: auto;
+}
+.discount-box2 {
+	display: flex;
+	margin: 60px auto;
+	width: 80%;
+}
+.other-content {
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.other-item {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	padding: 0;
+}
+.otherPic-box {
+	display: flex;
+	flex-flow: column;
+	width: 16%;
+}
+.otherPic-box > p {
+	font-family: ‘cwTeXFangSong’, serif, Lucida Console;
+	margin: 0;
+	padding: 5px 0;
+	text-align: center;
+	background-color: #000000;
+	letter-spacing: 1px;
+	font-size: 16px;
+	color: #F6F6F6;
+	cursor: default;
+}
+.other-pic {
+	display: flex;
+	width: 100%;
 }
