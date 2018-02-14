@@ -19,7 +19,7 @@ header {
 	display: flex;
 	justify-content: center;
 }
-#queen-logo:hover, .member-link:hover, .header-list>a:hover, .list-link:hover {
+#queen-logo:hover, .member-link:hover, .header-list>a:hover, .list-link:hover, .contact-community>a:hover {
 	opacity: 0.5;
 }
 .member-link:hover, .list-link, .list-link:hover {
@@ -100,10 +100,6 @@ header {
 }
 #myCarousel > ol > .active {
 	background-color: #666666;
-}
-#queen-footer {
-	background-color: #2a2a2a;
-	height: 190px;
 }
 .spring-video, .spring-font, .spring-sale {
 	display: flex; 
@@ -205,7 +201,7 @@ header {
 	width: 16%;
 }
 .otherPic-box > p {
-	font-family: ‘cwTeXFangSong’, serif, Lucida Console;
+	font-family: Microsoft JhengHei, Lucida Console;
 	margin: 0;
 	padding: 5px 0;
 	text-align: center;
@@ -219,3 +215,76 @@ header {
 	display: flex;
 	width: 100%;
 }
+#queen-footer {
+	background-color: #2a2a2a;
+	height: 190px;
+}
+.footer-list {
+	display: flex;
+	height: 35%;
+	border-bottom: 1px solid white;
+}
+.footerlist-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 65%;
+	margin: 0 auto;
+}
+.footerlist-font {
+	font-family: ‘cwTeXFangSong’, Lucida Console;
+	color: #F2F2F2;
+	font-size: 12px;
+	font-weight: lighter;
+	transition: 0.5s;
+}
+.footerlist-box > a:hover, .contact-font > a, .contact-font > a:hover{
+	color: #F2F2F2;
+}
+.footer-contact {
+	border: 1px solid white;
+	display: flex;
+	height: 45%;
+}
+.contact-community {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	border: 1px solid white;
+	width: 30%;
+}
+.community-img {
+	padding: 0 5px;
+	transition: 0.5s;
+}
+.contact-local {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	margin: 0 auto;
+	width: 40%;
+}
+.contact-font {
+	display: flex;
+	margin: 0 auto;
+	font-size: 11px;
+	font-family: Times New Roman;
+	font-weight: bold;
+	color: #F2F2F2;
+	cursor: default;
+	transition: 0.5s;
+}
+.contact-epaper {
+	display: flex;
+	align-items: center;
+	border: 1px solid white;
+	width: 30%;
+}
+.epaper-all > span, .submit {
+	font-family: Times New Roman;
+	background-color: #2a2a2a;
+	color: #F2F2F2;
+}
+
+
+
